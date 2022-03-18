@@ -1,0 +1,23 @@
+#program to remove vowels from a word
+s=input()
+l=list(s)
+x=[]
+for i in l:
+    if i=='a' or i=='A':
+        continue
+    elif i=='e' or i=='E':
+        continue
+    elif i=='i' or i=='I':
+        continue
+    elif i=='o' or i=='O':
+        continue
+    elif i=='u' or i=='U':
+        continue
+    else:
+        x.append(i)
+for i in x:
+    print(i,end='')
+    
+    Output:
+    kakinada
+    kknd
