@@ -1,0 +1,27 @@
+s=input()
+l1=list(s)
+l=0
+u=0
+d=0
+s=0
+for i in l1:
+    if (i.islower()):
+        l=l+1
+    elif (i.isupper()):
+        u=u+1
+    elif (i.isdigit()):
+        d=d+1
+    else:
+        s=s+1
+if l>=1:
+    if u>=1:
+        if d>=1:
+            if s>=1:
+                print('given password is valid')
+    else:
+        print('given password is invalid') 
+
+INPUT:
+34565346fdgfdghgjy$%$^$#%^$
+OUTPIT:
+given password is invalid
